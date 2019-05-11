@@ -1,0 +1,12 @@
+{
+    "name": "rovbet",
+    "version": "0.0.1",
+    "private": false,
+    "dependencies": {
+        "ejs": "latest",
+        "express": "latest"
+    },
+    "scripts": {
+        "start": "node app.js"
+    }
+}
