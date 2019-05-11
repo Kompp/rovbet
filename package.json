@@ -4,7 +4,8 @@
     "private": false,
     "dependencies": {
         "ejs": "latest",
-        "express": "latest"
+        "express": "latest",
+        "puppeteer": "latest"
     },
     "scripts": {
         "start": "node app.js"
