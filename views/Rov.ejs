@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" class="bx-core bx-no-touch bx-no-retina bx-chrome no-touchevents no-ipad no-iphone no-ipod no-appleios no-ie no-ie-10 no-ie-11 no-edge windows no-touchevents no-ipad no-iphone no-ipod no-appleios no-ie no-ie-10 no-ie-11 no-edge windows no-touchevents no-ipad no-iphone no-ipod no-appleios no-ie no-ie-10 no-ie-11 no-edge windows no-touchevents no-ipad no-iphone no-ipod no-appleios no-ie no-ie-10 no-ie-11 no-edge windows no-touchevents no-ipad no-iphone no-ipod no-appleios no-ie no-ie-10 no-ie-11 no-edge windows no-touchevents no-ipad no-iphone no-ipod no-appleios no-ie no-ie-10 no-ie-11 no-edge windows">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#99a73a">
+    <meta name="cmsmagazine" content="918c8f14e47036201c9ff316c734e22f">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    <title>ROVBET™</title>
+    <style>
+        .preloader {
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #99a73a;
+            color: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center
+        }
+        
+        .preloader__img {
+            width: 210px;
+            height: 210px;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: cover;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 210 210' width='210' height='210' fill='%23fff'%3E%3Cpath fill='none' d='M0 0h210v210H0z'/%3E%3Cimage width='152' height='152' transform='translate(29 29)' xlink:href='data:image/png;base64,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'/%3E%3Cpath d='M119.28 55.18l2 .8 11.33-18.52c10.11 1.81 11.33.39 11.49-.51s-.47-2.66-10.56-4.56l-4-21.34h-2.18v20.3a118.48 118.48 0 0 0-12.22-1.18L114 23.56l-1.59-.29-.17 7.83-2.62 7.38 1.59.29 3.46-5.77a118.48 118.48 0 0 0 11.85 3.24z'/%3E%3C/svg%3E");
+            -webkit-animation: spreloaderSpin 2s linear infinite;
+            animation: spreloaderSpin 2s linear infinite
+        }
+        
+        @media screen and (max-width:767px) {
+            .preloader__img {
+                width: 160px;
+                height: 160px
+            }
+        }
+        
+        body.is-ready .preloader {
+            background-color: rgba(153, 167, 58, .75)
+        }
+        
+        @-webkit-keyframes spreloaderSpin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
+            }
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
+            }
+        }
+        
+        @keyframes spreloaderSpin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
+            }
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
+            }
+        }
+    </style>
+
+    <link rel="icon" type="image/png" href="http://localhost/Rov_files/favicon.png">
+    <link href="./Rov_files/style.css" type="text/css" rel="stylesheet">
+    <link href="./Rov_files/style2.css" type="text/css" data-template-style="true" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: "mindzip";
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot");
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot?#iefix") format("embedded-opentype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.woff") format("woff"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.ttf") format("truetype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.svg#mindzip") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "mindzip-icons";
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot");
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot?#iefix") format("embedded-opentype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.woff") format("woff"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.ttf") format("truetype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.svg#mindzip") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <style></style>
+    <style>
+        @font-face {
+            font-family: "mindzip";
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot");
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot?#iefix") format("embedded-opentype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.woff") format("woff"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.ttf") format("truetype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.svg#mindzip") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "mindzip-icons";
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot");
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot?#iefix") format("embedded-opentype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.woff") format("woff"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.ttf") format("truetype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.svg#mindzip") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <style id="__web-inspector-hide-shortcut-style__" type="text/css">
+        .__web-inspector-hide-shortcut__,
+        .__web-inspector-hide-shortcut__ *,
+        .__web-inspector-hidebefore-shortcut__::before,
+        .__web-inspector-hideafter-shortcut__::after {
+            visibility: hidden !important;
+        }
+    </style>
+    <style></style>
+    <style>
+        @font-face {
+            font-family: "mindzip";
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot");
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot?#iefix") format("embedded-opentype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.woff") format("woff"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.ttf") format("truetype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.svg#mindzip") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "mindzip-icons";
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot");
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot?#iefix") format("embedded-opentype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.woff") format("woff"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.ttf") format("truetype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.svg#mindzip") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <style></style>
+    <style>
+        @font-face {
+            font-family: "mindzip";
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot");
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot?#iefix") format("embedded-opentype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.woff") format("woff"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.ttf") format("truetype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.svg#mindzip") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "mindzip-icons";
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot");
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot?#iefix") format("embedded-opentype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.woff") format("woff"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.ttf") format("truetype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.svg#mindzip") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <style></style>
+    <style>
+        @font-face {
+            font-family: "mindzip";
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot");
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot?#iefix") format("embedded-opentype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.woff") format("woff"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.ttf") format("truetype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.svg#mindzip") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "mindzip-icons";
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot");
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot?#iefix") format("embedded-opentype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.woff") format("woff"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.ttf") format("truetype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.svg#mindzip") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <style></style>
+    <style>
+        @font-face {
+            font-family: "mindzip";
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot");
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot?#iefix") format("embedded-opentype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.woff") format("woff"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.ttf") format("truetype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.svg#mindzip") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "mindzip-icons";
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot");
+            src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot?#iefix") format("embedded-opentype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.woff") format("woff"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.ttf") format("truetype"), url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.svg#mindzip") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body class="bg-gray main-page is-ready" style="margin-bottom: 0px; padding-right: 0px;">
+    <div id="preloader" class="preloader" style="display: none;">
+        <div class="preloader__img"></div>
+    </div>
+
+    <div class="wrapper">
+        <section class="bg-blue js-alerts" style="display: none;">
+            <div class="bg-dark alerts-section">
+                <div class="i-close i-close--w js-alert-close" data-js="close-alerts"></div>
+                <div class="container">
+                    <div class="swiper-container js-alerts-slider swiper-container-fade swiper-container-horizontal">
+                        <div class="swiper-wrapper" style="transition-duration: 300ms;">
+
+                            <div data-hermitage-link="" class="swiper-slide swiper-slide-active" style="width: 1140px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <header class="header bg-blue">
+            <div class="header-inner" style="padding-right: 0px;">
+                <div class="container">
+                    <div class="header-row">
+
+
+                        <div class="header-col header-col--first header-col--closed">
+                            <a class="hdr-link hdr-link-tab  is-active " id='titre' target="_blank">RovBet - AI powered soccer ⚽</a>
+
+                        </div>
+                        <div class="header-col ml-auto fx-ai-center--xs">
+
+                            <span id="confidence" class="d-none d-sm-inline-block hdr-link">Today's confidence : 0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="section-intro bg-blue">
+            <div class="container">
+                <div class="intro-page js-intro-page up-get">
+                    <div class="intro-page__svx intro-page__svx--source">
+                        <div class="js-per-rotate svx-per-rotate" style="transform: perspective(1000px) rotateX(0deg);">
+                            <!-- no: airport-logos/ROV-code --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 376" width="1260" height="376">
+								<path
+									d="M379.5 220.9v-1c36.2-18.3 54.5-60.7 54.5-99.5 0-53.1-26-90.2-67.2-106.1C351 8.2 333.2 5.6 296 5.6H169.2v364.7h89.1V247.4h41.8l64.7 122.9h99.3l-70.8-127.5c-8.7-15.2-13.8-21.9-13.8-21.9zm-82.5-50h-38.7V82.1h30c14.8 0 25.5 1.5 33.6 5.1 16.8 6.6 21.4 20.4 21.4 38.8.1 29.1-17.8 44.9-46.3 44.9z">
+								</path>
+								<path
+									d="M630.1-.5C517-.5 439.6 81.1 439.6 185.7c0 107.2 77.4 190.8 190.5 190.8s190.5-83.6 190.5-190.8C820.6 81.1 743.1-.5 630.1-.5zm0 295.4c-57.6 0-98.3-47-98.3-109.2 0-59.7 40.7-104.6 98.3-104.6s98.3 44.9 98.3 104.6c0 62.2-40.8 109.2-98.3 109.2zM1041.6 5.6l-65.2 207.6c-7.1 22.9-13.8 58.7-13.8 58.7h-1s-6.6-35.8-13.8-58.7L883.7 5.6h-96.8l128.9 364.7h92.7L1136.8 5.6h-95.2z">
+								</path>
+							</svg> </div>
+                    </div>
+
+
+                    <br><br><br>
+                    <div class="intro-page-row">
+                        <span class="logo-site" width="350">
+							<!---REMPLI PAR LA SUITE-->
+						</span>
+                    </div>
+                    <div class="intro-page-row">
+                        <div class="intro-page-links">
+                            <a class="intro-page__link js-plane" data-path="out" target="_blank">BetBot</a>
+                            <a class="intro-page__link js-plane" data-path="in" target="_blank">Google Soccer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-blue pb-8">
+            <div class="container">
+                <ul class="list-unstyled card-content-list js-fade-up in-viewport">
+
+                </ul>
+            </div>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                //Librarie d'animations on scroll
+                AOS.init();
+            </script>
+            <script>
+                //REMPLISSAGE DES TABLES
+                AOS.init();
+                var contenu = ""
+                var matchs = JSON.parse('<%- JSON.stringify(value.matchs) %>')
+                var vainqueurs = JSON.parse('<%- JSON.stringify(value.vainqueurs) %>')
+                var ligues = JSON.parse('<%- JSON.stringify(value.ligues) %>')
+                var prédictions = JSON.parse('<%- JSON.stringify(value.prédictions) %>')
+                var moyenne = 0
+                var nbMatchs = 0
+                var dates = JSON.parse('<%- JSON.stringify(value.dates) %>')
+
+                for (var result in matchs) {
+                    if (ligues[result] != "MLS" && ligues[result] != "Veikkausliiga" && ligues[result] != "Superettan" && ligues[result] != "League One") {
+                        contenu += "<li data-aos=\"fade-up\" id=\"" + result + "\"><a class=\"card-content\" target=\"_blank\"><div class=\"card-content-top\"><div class=\"card-content__title\">" + matchs[result] + "</div><p class=\"subtitle\">" + ligues[result] + "</p></div><div><img src=\"./Rov_files/" + ligues[result] + ".png\" class=\"badge-ligue\"></div><div class=\"card-content-body\"><p class=\"cote\">" + prédictions[result] + "</p><p>🏆 " + vainqueurs[result] + "</p><p>" + dates[result] + "</p><br><img src=\"./Rov_files/attente.png\" height=\"25\"></div></a></li>"
+                        nbMatchs++
+                        moyenne += parseInt(prédictions[result].substring(0, 2))
+                    }
+                }
+
+                document.getElementById("confidence").textContent = "Today's confidence : " + Math.round(moyenne / nbMatchs) + "% 👌"
+
+                document.getElementsByClassName("list-unstyled card-content-list js-fade-up in-viewport")[0].innerHTML = contenu
+                AOS.refresh();
+                var all = [].slice.call(document.getElementsByTagName('li'))
+                all.forEach(function(element, index) {
+                    element.addEventListener("click", function() {
+                        url = 'http://www.google.com/search?q=' + matchs[element.id];
+                        window.open(url, '_blank');
+                    })
+                })
+            </script>
+        </section>
+    </div>
+    <script type="text/javascript">
+        if (!window.BX) window.BX = {};
+        if (!window.BX.message) window.BX.message = function(mess) {
+            if (typeof mess == 'object')
+                for (var i in mess) BX.message[i] = mess[i];
+            return true;
+        };
+    </script>
+    <script type="text/javascript" src="./Rov_files/template_8a67ec2ad485acb41c2951a63bc7fed2_v1.js.téléchargement"></script>
+
+    <script async="" src="./Rov_files/js"></script>
+</body>
+
+</html>

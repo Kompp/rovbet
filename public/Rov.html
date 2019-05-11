@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en"
+	class="bx-core bx-no-touch bx-no-retina bx-chrome no-touchevents no-ipad no-iphone no-ipod no-appleios no-ie no-ie-10 no-ie-11 no-edge windows no-touchevents no-ipad no-iphone no-ipod no-appleios no-ie no-ie-10 no-ie-11 no-edge windows no-touchevents no-ipad no-iphone no-ipod no-appleios no-ie no-ie-10 no-ie-11 no-edge windows no-touchevents no-ipad no-iphone no-ipod no-appleios no-ie no-ie-10 no-ie-11 no-edge windows no-touchevents no-ipad no-iphone no-ipod no-appleios no-ie no-ie-10 no-ie-11 no-edge windows no-touchevents no-ipad no-iphone no-ipod no-appleios no-ie no-ie-10 no-ie-11 no-edge windows">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script type="text/javascript" src="./Rov_files/51449283" async=""></script>
+	<script type="text/javascript" src="./Rov_files/51449283(1)" async=""></script>	
+	<script type="text/javascript" src="./Rov_files/51449283(2)" async=""></script>
+	<script type="text/javascript" src="./Rov_files/51449283(3)" async=""></script>
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#99a73a">	
+	<meta name="cmsmagazine" content="918c8f14e47036201c9ff316c734e22f">
+	<title>ROVBET™</title>
+	<style>
+		.preloader {
+			position: fixed;
+			z-index: 9999;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #99a73a;
+			color: #fff;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center
+		}
+
+		.preloader__img {
+			width: 210px;
+			height: 210px;
+			background-repeat: no-repeat;
+			background-position: 50%;
+			background-size: cover;
+			background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 210 210' width='210' height='210' fill='%23fff'%3E%3Cpath fill='none' d='M0 0h210v210H0z'/%3E%3Cimage width='152' height='152' transform='translate(29 29)' xlink:href='data:image/png;base64,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'/%3E%3Cpath d='M119.28 55.18l2 .8 11.33-18.52c10.11 1.81 11.33.39 11.49-.51s-.47-2.66-10.56-4.56l-4-21.34h-2.18v20.3a118.48 118.48 0 0 0-12.22-1.18L114 23.56l-1.59-.29-.17 7.83-2.62 7.38 1.59.29 3.46-5.77a118.48 118.48 0 0 0 11.85 3.24z'/%3E%3C/svg%3E");
+			-webkit-animation: spreloaderSpin 2s linear infinite;
+			animation: spreloaderSpin 2s linear infinite
+		}
+
+		@media screen and (max-width:767px) {
+			.preloader__img {
+				width: 160px;
+				height: 160px
+			}
+		}
+
+		body.is-ready .preloader {
+			background-color: rgba(153, 167, 58, .75)
+		}
+
+		@-webkit-keyframes spreloaderSpin {
+			0% {
+				-webkit-transform: rotate(0deg);
+				transform: rotate(0deg)
+			}
+
+			to {
+				-webkit-transform: rotate(1turn);
+				transform: rotate(1turn)
+			}
+		}
+
+		@keyframes spreloaderSpin {
+			0% {
+				-webkit-transform: rotate(0deg);
+				transform: rotate(0deg)
+			}
+
+			to {
+				-webkit-transform: rotate(1turn);
+				transform: rotate(1turn)
+			}
+		}
+	</style>
+
+	<link rel="icon" type="image/png" href="http://localhost/Rov_files/favicon.png">
+	<script type="text/javascript"
+		data-skip-moving="true">(function (w, d, n) { var cl = "bx-core"; var ht = d.documentElement; var htc = ht ? ht.className : undefined; if (htc === undefined || htc.indexOf(cl) !== -1) { return; } var ua = n.userAgent; if (/(iPad;)|(iPhone;)/i.test(ua)) { cl += " bx-ios"; } else if (/Android/i.test(ua)) { cl += " bx-android"; } cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch"); cl += w.devicePixelRatio && w.devicePixelRatio >= 2 ? " bx-retina" : " bx-no-retina"; var ieVersion = -1; if (/AppleWebKit/.test(ua)) { cl += " bx-chrome"; } else if ((ieVersion = getIeVersion()) > 0) { cl += " bx-ie bx-ie" + ieVersion; if (ieVersion > 7 && ieVersion < 10 && !isDoctype()) { cl += " bx-quirks"; } } else if (/Opera/.test(ua)) { cl += " bx-opera"; } else if (/Gecko/.test(ua)) { cl += " bx-firefox"; } if (/Macintosh/i.test(ua)) { cl += " bx-mac"; } ht.className = htc ? htc + " " + cl : cl; function isDoctype() { if (d.compatMode) { return d.compatMode == "CSS1Compat"; } return d.documentElement && d.documentElement.clientHeight; } function getIeVersion() { if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)) { return -1; } var rv = -1; if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)) { rv = 11; } else if (!!d.documentMode && d.documentMode >= 10) { rv = 10; } else if (!!d.documentMode && d.documentMode >= 9) { rv = 9; } else if (d.attachEvent && !/Opera/.test(ua)) { rv = 8; } if (rv == -1 || rv == 8) { var re; if (n.appName == "Microsoft Internet Explorer") { re = new RegExp("MSIE ([0-9]+[\.0-9]*)"); if (re.exec(ua) != null) { rv = parseFloat(RegExp.$1); } } else if (n.appName == "Netscape") { rv = 11; re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)"); if (re.exec(ua) != null) { rv = parseFloat(RegExp.$1); } } } return rv; } })(window, document, navigator);</script>
+	<link href="./Rov_files/kernel_main_v1.css" type="text/css" rel="stylesheet">
+	<link href="./Rov_files/template_86d998953b0cb3009db66a99400e0f34_v1.css" type="text/css" data-template-style="true"
+		rel="stylesheet">
+	<style>
+		@font-face {
+			font-family: "mindzip";
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot");
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot?#iefix") format("embedded-opentype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.woff") format("woff"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.ttf") format("truetype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.svg#mindzip") format("svg");
+			font-weight: normal;
+			font-style: normal;
+			d
+		}
+
+		@font-face {
+			font-family: "mindzip-icons";
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot");
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot?#iefix") format("embedded-opentype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.woff") format("woff"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.ttf") format("truetype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.svg#mindzip") format("svg");
+			font-weight: normal;
+			font-style: normal;
+			d
+		}
+	</style>
+	<style></style>
+	<style>
+		@font-face {
+			font-family: "mindzip";
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot");
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot?#iefix") format("embedded-opentype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.woff") format("woff"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.ttf") format("truetype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.svg#mindzip") format("svg");
+			font-weight: normal;
+			font-style: normal;
+			d
+		}
+
+		@font-face {
+			font-family: "mindzip-icons";
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot");
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot?#iefix") format("embedded-opentype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.woff") format("woff"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.ttf") format("truetype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.svg#mindzip") format("svg");
+			font-weight: normal;
+			font-style: normal;
+			d
+		}
+	</style>
+	<style id="__web-inspector-hide-shortcut-style__" type="text/css">
+		.__web-inspector-hide-shortcut__,
+		.__web-inspector-hide-shortcut__ *,
+		.__web-inspector-hidebefore-shortcut__::before,
+		.__web-inspector-hideafter-shortcut__::after {
+			visibility: hidden !important;
+		}
+	</style>
+	<style></style>
+	<style>
+		@font-face {
+			font-family: "mindzip";
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot");
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot?#iefix") format("embedded-opentype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.woff") format("woff"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.ttf") format("truetype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.svg#mindzip") format("svg");
+			font-weight: normal;
+			font-style: normal;
+			d
+		}
+
+		@font-face {
+			font-family: "mindzip-icons";
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot");
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot?#iefix") format("embedded-opentype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.woff") format("woff"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.ttf") format("truetype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.svg#mindzip") format("svg");
+			font-weight: normal;
+			font-style: normal;
+			d
+		}
+	</style>
+	<style></style>
+	<style>
+		@font-face {
+			font-family: "mindzip";
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot");
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot?#iefix") format("embedded-opentype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.woff") format("woff"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.ttf") format("truetype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.svg#mindzip") format("svg");
+			font-weight: normal;
+			font-style: normal;
+			d
+		}
+
+		@font-face {
+			font-family: "mindzip-icons";
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot");
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot?#iefix") format("embedded-opentype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.woff") format("woff"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.ttf") format("truetype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.svg#mindzip") format("svg");
+			font-weight: normal;
+			font-style: normal;
+			d
+		}
+	</style>
+	<style></style>
+	<style>
+		@font-face {
+			font-family: "mindzip";
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot");
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot?#iefix") format("embedded-opentype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.woff") format("woff"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.ttf") format("truetype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.svg#mindzip") format("svg");
+			font-weight: normal;
+			font-style: normal;
+			d
+		}
+
+		@font-face {
+			font-family: "mindzip-icons";
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot");
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot?#iefix") format("embedded-opentype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.woff") format("woff"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.ttf") format("truetype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.svg#mindzip") format("svg");
+			font-weight: normal;
+			font-style: normal;
+			d
+		}
+	</style>
+	<style></style>
+	<style>
+		@font-face {
+			font-family: "mindzip";
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot");
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.eot?#iefix") format("embedded-opentype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.woff") format("woff"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.ttf") format("truetype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/mindzip.svg#mindzip") format("svg");
+			font-weight: normal;
+			font-style: normal;
+			d
+		}
+
+		@font-face {
+			font-family: "mindzip-icons";
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot");
+			src: url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.eot?#iefix") format("embedded-opentype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.woff") format("woff"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.ttf") format("truetype"),
+				url("chrome-extension://cmkhjlckcaeahimgmlnihmphjkcccopm/fonts/MZ-iconFont.svg#mindzip") format("svg");
+			font-weight: normal;
+			font-style: normal;
+			d
+		}
+	</style>
+</head>
+
+<body class="bg-gray main-page is-ready" style="margin-bottom: 262px; padding-right: 0px;">
+
+
+	<div id="preloader" class="preloader" style="display: none;">
+		<div class="preloader__img"></div>
+	</div>
+
+	<div class="wrapper">
+
+
+		<div class="nav-float">
+			<div class="container">
+				<div class="nav-float__btn js-nav-float-btn" style="display: none;"></div>
+			</div>
+		</div>
+
+		<div class="nav-wrap js-nav-container" style="display: none;">
+			<nav class="nav">
+				<div class="nav-middle js-tab" data-skip-check="true">
+					<div class="js-tab__content  is-active " data-header-menu="passengers">
+
+						<div class="container">
+							<div class="nav-list">
+								<div class="fake-li">
+									<a href="http://rov.aero/board/" class="nav__link" target="_blank">Табло рейсов</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/how-to-get/to/" class="nav__link" target="_blank">Как добраться</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/parking/" class="nav__link" target="_blank">Парковка</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/services/food-and-shopping/" class="nav__link" target="_blank">Еда и
+										покупки</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/services/businesshall/" class="nav__link" target="_blank">Бизнес-залы</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/services/vip/" class="nav__link" target="_blank">VIP терминал</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/scheme/" class="nav__link" target="_blank">Схема аэропорта</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/services/offers/" class="nav__link" target="_blank">Спецпредложения</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/services/luggage/" class="nav__link" target="_blank">Багаж</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/services/" class="nav__link" target="_blank">Услуги</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/rules/" class="nav__link" target="_blank">Правила</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/contacts/" class="nav__link" target="_blank">Контакты</a>
+								</div>
+
+							</div>
+
+							<div class="nav-list nav-list--sub">
+								<div class="fake-li">
+									<a href="http://rov.aero/registration/" class="nav__link-sub" target="_blank">Регистрация</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/about/airport-today/" class="nav__link-sub" target="_blank">Об аэропорте</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/services/booking-tickets/" class="nav__link-sub"
+										target="_blank">Бронирование</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/work/" class="nav__link-sub" target="_blank">Работа у нас</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/schedule/" class="nav__link-sub" target="_blank">Расписание</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/feedback/" class="nav__link-sub" target="_blank">Обратная связь</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="js-tab__content " data-header-menu="partners">
+
+						<div class="container">
+							<div class="nav-list">
+								<div class="fake-li">
+									<a href="http://rov.aero/partners/airlines/" class="nav__link" target="_blank">Авиакомпаниям</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/partners/shippers/" class="nav__link" target="_blank">Грузоотправителям</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/partners/advertisers/" class="nav__link" target="_blank">Рекламодателям</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/partners/suppliers/" class="nav__link" target="_blank">Поставщикам</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/partners/renters/" class="nav__link" target="_blank">Арендаторам</a>
+								</div>
+								<div class="fake-li">
+									<a href="http://rov.aero/partners/operators/" class="nav__link" target="_blank">Операторам</a>
+								</div>
+
+							</div>
+
+							<div class="nav-list nav-list--sub">
+								<div class="fake-li">
+									<a href="http://rov.aero/partners/about/info/" class="nav__link-sub" target="_blank">Раскрытие
+										информации</a>
+								</div>
+								<div class="fake-li d-none d-md-inline-block"></div>
+								<div class="fake-li">
+									<a href="http://rov.aero/partners/electro/" class="nav__link-sub" target="_blank">Электросети</a>
+								</div>
+								<div class="fake-li d-none d-md-inline-block"></div>
+								<div class="fake-li">
+									<a href="http://rov.aero/partners/contacts/" class="nav__link-sub" target="_blank">Контакты</a>
+								</div>
+								<div class="fake-li d-none d-md-inline-block"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="nav-bottom">
+
+					<div class="nav-bottom-left">
+						<a href="http://rov.aero/partners/" class="nav-bottom__link js-blind-panel-link" target="_blank">
+							<!-- no: glasses.svg --><svg viewBox="0 0 24.01 15" xmlns="http://www.w3.org/2000/svg" stroke="#fff"
+								width="24" height="15">
+								<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+									<path d="m23 9c0-1.47-.33-2-4-2-2.2 0-5 .53-5 2s1.07 5 4 5h1c4.4 0 4-3.53 4-5z"></path>
+									<path d="m23 8-3-6s-1.31-2.25-4 0"></path>
+									<path d="m1 9c0-1.47.33-2 4-2 2.2 0 5 .53 5 2s-1.07 5-4 5h-1c-4.39 0-4-3.53-4-5z"></path>
+									<path d="m1 8 3-6s1.32-2.25 4 0"></path>
+									<path d="m10 10a2.23 2.23 0 0 1 2-1 2.23 2.23 0 0 1 2 1"></path>
+								</g>
+							</svg> <span>Версия для слабовидящих</span>
+						</a>
+					</div>
+
+
+					<div class="nav-bottom-left">
+						<a href="http://rov.aero/services/wifi/" class="nav-bottom__link " target="_blank">
+							<!-- no: wi-fi.svg --><svg viewBox="0 0 18.38 14" xmlns="http://www.w3.org/2000/svg" fill="#fff"
+								width="19" height="14">
+								<g stroke="none">
+									<path d="m17 5.22a11 11 0 0 0 -15.55 0l-1.45-1.41a13 13 0 0 1 18.38 0z"></path>
+									<path d="m14.14 8.05a7 7 0 0 0 -9.9 0l-1.41-1.41a9 9 0 0 1 12.72 0z"></path>
+									<path d="m11.31 10.88a3.07 3.07 0 0 0 -4.24 0l-1.41-1.41a5 5 0 0 1 7.07 0z"></path>
+									<circle cx="9.19" cy="13" r="1"></circle>
+								</g>
+							</svg> <span>Бесплатный Wi-Fi</span>
+						</a>
+					</div>
+
+				</div>
+			</nav>
+		</div>
+		<div class="blind-panel js-blind-panel">
+			<div class="container px-sm-0">
+
+				<div class="blind-panel-row">
+					<div class="blind-panel-left">
+
+						<div class="blind-panel-item mr-sm-2 mr-md-5">
+							<div class="blind-panel__title">Размер шрифта:</div>
+							<div class="blind-panel-controls js-panel-controls">
+								<div class="blind-panel__control blind-panel__font js-control
+                        " data-control="theme-font-sm">
+									Аб </div>
+								<div class="blind-panel__control blind-panel__font blind-panel__font--md js-control
+                        " data-control="theme-font-md">
+									Аб </div>
+								<div class="blind-panel__control blind-panel__font blind-panel__font--lg js-control
+" data-control="theme-font-lg">
+									Аб </div>
+							</div>
+						</div>
+
+						<div class="blind-panel-item mr-sm-2 mr-md-5">
+							<div class="blind-panel__title">Цветовая схема:</div>
+							<div class="blind-panel-controls js-panel-controls">
+								<div class="blind-panel__control blind-panel__color js-control
+ " data-control="theme-color-blind">
+									<!-- no: blind-color-gray.svg --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.71 43.71"
+										width="28px" height="28px" fill="#fff">
+										<path
+											d="M21.86,0A21.86,21.86,0,1,0,43.71,21.86,21.85,21.85,0,0,0,21.86,0ZM4.37,21.86A17.51,17.51,0,0,1,21.86,4.37v35A17.51,17.51,0,0,1,4.37,21.86Z">
+										</path>
+									</svg>
+								</div>
+								<div class="blind-panel__control blind-panel__color js-control
+                        " data-control="theme-color-custom">
+									<!-- no: blind-color-blue.svg --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.71 43.71"
+										width="28px" height="28px" fill="#0098db">
+										<path
+											d="M21.86,0A21.86,21.86,0,1,0,43.71,21.86,21.85,21.85,0,0,0,21.86,0ZM4.37,21.86A17.51,17.51,0,0,1,21.86,4.37v35A17.51,17.51,0,0,1,4.37,21.86Z">
+										</path>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="blind-panel-item">
+							<div class="blind-panel__title">Изображения:</div>
+							<div class="blind-panel-controls js-panel-controls">
+								<div class="blind-panel__control blind-panel__photo js-control
+" data-control="theme-photo">
+									<!-- no: blind-photo.svg --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.71 43.71"
+										width="28" height="28" fill="#fff">
+										<path
+											d="M43.71,3.17A3.16,3.16,0,0,0,40.55,0H3.17A3.17,3.17,0,0,0,0,3.17V40.55a3.16,3.16,0,0,0,3.17,3.16H40.55a3.15,3.15,0,0,0,3.16-3.16ZM36.28,34.6H7.49c-.79,0-1.06-.71-.61-1.35L15.2,21.34a1.17,1.17,0,0,1,1.84-.2l1.68,1.67a1.27,1.27,0,0,0,1.92-.1l4-4.91a1,1,0,0,1,1.72.07L36.9,33.24C37.35,33.89,37.07,34.6,36.28,34.6Zm-2-14.49a3.44,3.44,0,1,1,3.44-3.44A3.44,3.44,0,0,1,34.27,20.11Z">
+										</path>
+									</svg>
+								</div>
+								<div class="blind-panel__control blind-panel__photo js-control
+" data-control="theme-photo-no">
+									<!-- no: blind-photo-no.svg --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.71 45.71"
+										width="28" height="28">
+										<path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2px" opacity=".3"
+											d="M41.55,1H4.17A3.17,3.17,0,0,0,1,4.17V41.55a3.16,3.16,0,0,0,3.17,3.16H41.55a3.15,3.15,0,0,0,3.16-3.16V4.17A3.16,3.16,0,0,0,41.55,1Z">
+										</path>
+										<polygon fill="#fff"
+											points="33.71 31.65 31.65 33.71 22.86 24.93 14.07 33.71 12 31.65 20.79 22.86 12 14.07 14.07 12 22.86 20.79 31.65 12 33.71 14.07 24.93 22.86 33.71 31.65">
+										</polygon>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="blind-panel-right">
+						<div class="blind-panel-item ml-2 ml-md-4 ml-lg-6">
+							<div class="blind-panel__close-btn blind-panel__cancel js-panel-blind-close">
+								<!-- no: blind-glasses.svg --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.01 23.5">
+									<path
+										d="M16.64,7a3,3,0,0,1,1.43-.75L19.7,4.64a3.13,3.13,0,0,0-.95-.35,4.2,4.2,0,0,0-3.39,1.19A1,1,0,1,0,16.64,7Z">
+									</path>
+									<path
+										d="M5.09,19.25l7-7H12a3.72,3.72,0,0,0-1.16.18c-.67-1.59-3.32-2.18-5.83-2.18-.73,0-1.36,0-1.93.08L4.87,6.75a1.26,1.26,0,0,1,.73-.48A2.35,2.35,0,0,1,7.37,7,1,1,0,0,0,8.65,5.48,4.2,4.2,0,0,0,5.26,4.29,3.18,3.18,0,0,0,3.12,5.8l-3,6a1,1,0,0,0,0,.77,4.92,4.92,0,0,0-.06.69v.33c0,1.13-.06,3,1.25,4.36A5.06,5.06,0,0,0,5,19.25ZM2,13.61v-.36c0-.79,0-1,3-1,2.6,0,4,.71,4,1,0,.88-.72,4-3,4H5a3.17,3.17,0,0,1-2.32-.71A4.16,4.16,0,0,1,2,13.61Z">
+									</path>
+									<path
+										d="M24,13.25a4.92,4.92,0,0,0-.06-.69,1,1,0,0,0-.05-.77L21.05,6.12,19.56,7.61l1.37,2.72c-.57-.05-1.2-.08-1.93-.08a14.28,14.28,0,0,0-2.27.18l-4,4a1.11,1.11,0,0,1,.38.29.61.61,0,0,0,.12.16c.52,2,2,4.29,4.63,4.37H19a5.06,5.06,0,0,0,3.75-1.31C24.06,16.61,24,14.71,24,13.58Zm-2.68,3.29a3.17,3.17,0,0,1-2.32.71H18c-2.28,0-3-3.12-3-4,0-.29,1.4-1,4-1,3,0,3,.21,3,1v.36A4.16,4.16,0,0,1,21.32,16.54Z">
+									</path>
+									<path
+										d="M1.25,23.5a1,1,0,0,1-.7-1.71L22.05.29a1,1,0,0,1,1.41,0,1,1,0,0,1,0,1.42L2,23.21A1,1,0,0,1,1.25,23.5Z">
+									</path>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<section class="bg-blue js-alerts" style="display: none;">
+			<div class="bg-dark alerts-section">
+				<div class="i-close i-close--w js-alert-close" data-js="close-alerts"></div>
+				<div class="container">
+					<div class="swiper-container js-alerts-slider swiper-container-fade swiper-container-horizontal">
+						<div class="swiper-wrapper" style="transition-duration: 300ms;">
+
+							<div data-hermitage-link="" class="swiper-slide swiper-slide-active"
+								style="width: 1140px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+								<a class="alerts-section__content" target="_blank">Старая версия сайта</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<header class="header bg-blue">
+			<div class="header-inner" style="padding-right: 0px;">
+				<div class="container">
+					<div class="header-row">
+
+
+
+
+						<div class="header-col header-col--first header-col--closed">
+							<a class="hdr-link hdr-link-tab  is-active " target="_blank">RovBet - AI powered betting</a>
+
+						</div>
+
+						<div class="header-col header-col--first header-col--opened js-tab" data-skip-check="true">
+
+							<span class="hdr-link hdr-link-tab js-tab__btn  is-active " data-toggle-class="is-active"
+								data-for="[data-header-menu=&#39;passengers&#39;]">Пассажирам</span>
+
+
+							<span class="hdr-link hdr-link-tab js-tab__btn  hdr-link--b " data-toggle-class="is-active"
+								data-for="[data-header-menu=&#39;partners&#39;]">Партнерам</span>
+
+						</div>
+						<div class="header-col ml-auto fx-ai-center--xs">
+
+							<span class="d-none d-sm-inline-block hdr-link">Rov.bot has earned : 0€</span>
+							<a class="d-inline-block hdr-link hdr-link--search ml-3" target="_blank">
+								<span class="i-search d-inline-block"></span>
+							</a>
+
+
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+		<section class="section-intro bg-blue">
+			<div class="container">
+				<div class="intro-page js-intro-page up-get">
+
+
+
+
+					<div class="intro-page__svx intro-page__svx--source">
+						<div class="js-per-rotate svx-per-rotate" style="transform: perspective(1000px) rotateX(0deg);">
+							<!-- no: airport-logos/ROV-code --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 376"
+								width="1260" height="376">
+								<path
+									d="M379.5 220.9v-1c36.2-18.3 54.5-60.7 54.5-99.5 0-53.1-26-90.2-67.2-106.1C351 8.2 333.2 5.6 296 5.6H169.2v364.7h89.1V247.4h41.8l64.7 122.9h99.3l-70.8-127.5c-8.7-15.2-13.8-21.9-13.8-21.9zm-82.5-50h-38.7V82.1h30c14.8 0 25.5 1.5 33.6 5.1 16.8 6.6 21.4 20.4 21.4 38.8.1 29.1-17.8 44.9-46.3 44.9z">
+								</path>
+								<path
+									d="M630.1-.5C517-.5 439.6 81.1 439.6 185.7c0 107.2 77.4 190.8 190.5 190.8s190.5-83.6 190.5-190.8C820.6 81.1 743.1-.5 630.1-.5zm0 295.4c-57.6 0-98.3-47-98.3-109.2 0-59.7 40.7-104.6 98.3-104.6s98.3 44.9 98.3 104.6c0 62.2-40.8 109.2-98.3 109.2zM1041.6 5.6l-65.2 207.6c-7.1 22.9-13.8 58.7-13.8 58.7h-1s-6.6-35.8-13.8-58.7L883.7 5.6h-96.8l128.9 364.7h92.7L1136.8 5.6h-95.2z">
+								</path>
+							</svg> </div>
+					</div>
+
+					<div class="intro-page-clouds">
+						<div class="intro-page__cloud-1"></div>
+						<div class="intro-page__cloud-2"></div>
+						<div class="intro-page__cloud-3"></div>
+						<div class="intro-page__vpp"></div>
+					</div>
+					<img src="./Rov_files/plane_shadow1.png" alt="" class="intro-page__airplane-shadow-1">
+					<img src="./Rov_files/plane_shadow2.png" alt="" class="intro-page__airplane-shadow-2">
+					<img src="./Rov_files/plane.png" alt="" class="intro-page__airplane" style="">
+
+					<div class="intro-page-row">
+						<span class="logo-site">
+							<img src="./Rov_files/ROV-logo-ru.svg" alt="" class="logo-site__img">
+						</span>
+					</div>
+
+					<div class="intro-page-row">
+						<div class="intro-page-links">
+							<a href="http://rov.aero/departure/" class="intro-page__link js-plane" data-path="out"
+								target="_blank">Décoller</a>
+							<a href="http://rov.aero/arrival/" class="intro-page__link js-plane" data-path="in"
+								target="_blank">Atterir</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script>
+			const puppeteer = require('puppeteer');
+
+			let scrape = async () => {
+				const browser = await puppeteer.launch({ headless: false });
+				const page = await browser.newPage();
+
+				//Activer le logging à l'intérieur de page.evaluate
+				page.on('console', consoleObj => console.log(consoleObj.text()));
+
+				await page.goto("http://www.betbot.soccer/?page=&filter=true&period=month&method=betbot&likelihood=every&odds=safe");
+
+				await page.waitFor(1000) //Faire une pause d'une seconde
+
+				const result = await page.evaluate(() => {
+					let data = [];
+
+					//Recherche des éléments de la page
+					Array.from(document.getElementsByClassName("modal-header")).forEach(
+						function (element, index, array) {
+							let titre = element.querySelector(".modal-title").innerHTML //Titre du match
+							let prédiction = element.querySelector("h3").getElementsByTagName("span")[0] //Prédiction
+							data.push(titre + " / " + prédiction.innerHTML)
+						}
+					);
+
+					return data
+				})
+
+				console.log(result)
+
+				browser.close();
+				return result;
+			}
+
+			scrape().then((value) => {
+				value.forEach(function (element) {
+					alert(element)
+				})
+			})
+		</script>
+		<section class="bg-blue pb-8">
+			<div class="container">
+				<ul class="list-unstyled card-content-list js-fade-up in-viewport">
+					<li id="bx_651765591_967">
+						<a href="http://rov.aero/board/" class="card-content" target="_blank">
+							<div class="card-content-top">
+								<div class="card-content__title">Malmö FF - Hammarby IF<br>Allsvenskan
+								</div>
+							</div>
+							<div class="card-content-body">
+								<div class="card-content__pic">
+									<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" stroke="#0098db">
+										<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+											<rect height="51" rx="2" width="79" x="10.5" y="20"></rect>
+											<path d="m49.5 71v13"></path>
+											<g stroke-dasharray="7">
+												<path d="m20.5 30h4"></path>
+												<path d="m33.5 30h7"></path>
+												<path d="m47.5 30h3"></path>
+												<path d="m60.5 30h4"></path>
+												<path d="m73.5 30h6"></path>
+												<path d="m20.5 40h6"></path>
+												<path d="m33.5 40h7"></path>
+												<path d="m47.5 40h3"></path>
+												<path d="m60.5 40h6"></path>
+												<path d="m73.5 40h6"></path>
+												<path d="m20.5 50h4"></path>
+												<path d="m33.5 50h4"></path>
+												<path d="m47.5 50h6"></path>
+												<path d="m60.5 50h4"></path>
+												<path d="m73.5 50h3"></path>
+												<path d="m20.5 60h6"></path>
+												<path d="m33.5 60h5"></path>
+												<path d="m60.5 60h6"></path>
+												<path d="m73.5 60h4"></path>
+												<path d="m47.5 60h6"></path>
+											</g>
+										</g>
+									</svg> </div>
+							</div>
+						</a>
+					</li>
+					<li id="bx_651765591_977">
+						<a href="http://rov.aero/schedule/" class="card-content" target="_blank">
+							<div class="card-content-top">
+								<div class="card-content__title">Сезонное расписание</div>
+							</div>
+							<div class="card-content-body">
+								<div class="card-content__pic">
+									<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" stroke="#0098db">
+										<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+											<circle cx="70" cy="30.5" r="21"></circle>
+											<path d="m70 18.5v12"></path>
+											<path d="m82 30.5h-12"></path>
+											<path d="m9 30.5h11"></path>
+											<path d="m9 40.5h11"></path>
+											<path d="m9 50.5h11"></path>
+											<path d="m9 60.5h11"></path>
+											<path d="m9 70.5h11"></path>
+											<path d="m9 80.5h11"></path>
+											<path d="m9 90.5h11"></path>
+											<path d="m26 30.5h4"></path>
+											<path d="m26 40.5h4"></path>
+											<path d="m26 50.5h4"></path>
+											<path d="m26 60.5h4"></path>
+											<path d="m26 70.5h4"></path>
+											<path d="m26 80.5h4"></path>
+											<path d="m26 90.5h4"></path>
+											<path d="m36 30.5h4"></path>
+											<path d="m36 40.5h6"></path>
+											<path d="m36 50.5h12"></path>
+											<path d="m36 60.5h49"></path>
+											<path d="m36 70.5h49"></path>
+											<path d="m36 80.5h49"></path>
+											<path d="m36 90.5h49"></path>
+										</g>
+									</svg> </div>
+							</div>
+						</a>
+					</li>
+					<li id="bx_651765591_968">
+						<a href="http://rov.aero/how-to-get/" class="card-content" target="_blank">
+							<div class="card-content-top">
+								<div class="card-content__title">Как добраться</div>
+							</div>
+							<div class="card-content-body">
+								<div class="card-content__pic">
+									<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" stroke="#0098db">
+										<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+											<path d="m10.5 23 19.75-4v58l-19.75 4z"></path>
+											<path d="m30.25 19 19.75 4v58l-19.75-4"></path>
+											<path d="m50 23 19.75-4v58l-19.75 4"></path>
+											<path d="m69.75 19 19.75 4v58l-19.75-4"></path>
+											<circle cx="20.38" cy="64.75" r="2.5"></circle>
+											<circle cx="80.58" cy="39.25" r="2.5"></circle>
+											<path d="m20.38 62.25v-8.25l9.87-3 19.75 4 19.75-4 10.83 4v-13.25"></path>
+											<path d="m78.08 39.25-8.33-4-19.75 4-9.87-2v27.5l-9.88-2-7.37 2"></path>
+										</g>
+									</svg> </div>
+							</div>
+						</a>
+					</li>
+					<li id="bx_651765591_969">
+						<a href="http://rov.aero/parking/" class="card-content" target="_blank">
+							<div class="card-content-top">
+								<div class="card-content__title">Парковка</div>
+							</div>
+							<div class="card-content-body">
+								<div class="card-content__pic">
+									<svg enable-background="new 0 0 100 100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+										stroke="#0098db">
+										<g style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10">
+											<path d="m28.9 63.6 5.8-6.9"></path>
+											<path d="m17.9 36.9-1.3 5.3s-6.6 0-6.6-1.3 1.3-4 7.9-4z"></path>
+											<path
+												d="m86.7 53.1-6.6-7.9h-29.8-.7-29.7l-6.6 7.9s-1.3 22.5 1.3 25.1l7.9 1.3 2.6-1.3h24.5.7 24.5l2.6 1.3 7.9-1.3c2.7-2.7 1.4-25.1 1.4-25.1z">
+											</path>
+											<path
+												d="m81.5 54.4s-15.7 3.2-31.5 3.2-31.5-3.2-31.5-3.2-1.2 5.3 0 6.6 15.5 4.1 31.2 4.1h.3.3c15.7-.1 30-2.8 31.2-4.1s0-6.6 0-6.6z">
+											</path>
+											<path d="m82.1 70.2s-11.4 1.6-32.4 1.6h.6c-21 0-32.4-1.6-32.4-1.6"></path>
+											<path d="m71.1 63.6-5.8-6.9"></path>
+											<path d="m82.1 36.9 1.3 5.3s6.6 0 6.6-1.3-1.3-4-7.9-4z"></path>
+											<path d="m80.1 45.1-7.9-14.9s-7.9-2.6-22.5-2.6-22.5 2.6-22.5 2.6l-7.3 14.9"></path>
+											<path d="m92 70.2 6.9 14.7h-97.8l6.9-14.7"></path>
+										</g>
+									</svg> </div>
+							</div>
+						</a>
+					</li>
+					<li id="bx_651765591_970">
+						<a href="http://rov.aero/services/food-and-shopping/" class="card-content" target="_blank">
+							<div class="card-content-top">
+								<div class="card-content__title">Еда и покупки</div>
+							</div>
+							<div class="card-content-body">
+								<div class="card-content__pic">
+									<svg enable-background="new 0 0 100 100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+										stroke="#0098db">
+										<g style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10">
+											<path d="m22.9 84h-6.4v-51.7h48.5v14.1"></path>
+											<path d="m80.9 56-3 29h-17.2l-3-29"></path>
+											<path d="m82.3 51.4h-26.5l-1.2 4.6h28.9z"></path>
+											<path
+												d="m54.2 77.6h-27.2c-.8 0-1.5-.7-1.5-1.5v-2.1c0-.8.7-1.5 1.5-1.5h27.2c.8 0 1.5.7 1.5 1.5v2.1c-.1.8-.7 1.5-1.5 1.5z">
+											</path>
+											<path d="m53.1 77.8v3.6c0 2-4.1 3.6-9.2 3.6h-6.8c-5 0-9.2-1.6-9.2-3.6s0-3.6 0-3.6"></path>
+											<path d="m28 72.4s0-1.6 0-3.6 4.1-3.6 9.2-3.6h6.8c5 0 9.2 1.6 9.2 3.6s0 3.6 0 3.6"></path>
+											<path d="m71.5 51.4 2.8-13.3"></path>
+											<path d="m53.1 38.2v-10.7c0-6.9-5.6-12.6-12.6-12.6-6.9.1-12.5 5.7-12.5 12.6v10.7"></path>
+										</g>
+									</svg> </div>
+							</div>
+						</a>
+					</li>
+					<li id="bx_651765591_972">
+						<a href="http://rov.aero/services/businesshall/" class="card-content" target="_blank">
+							<div class="card-content-top">
+								<div class="card-content__title">Бизнес-залы</div>
+							</div>
+							<div class="card-content-body">
+								<div class="card-content__pic">
+									<svg enable-background="new 0 0 100 100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+										stroke="#0098db">
+										<g style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10">
+											<path d="m74 70.5h-48c-1.1 0-2-.9-2-2v-7c0-1.1.9-2 2-2h48c1.1 0 2 .9 2 2v7c0 1.1-.9 2-2 2z">
+											</path>
+											<path d="m25 70.5v14h50v-14"></path>
+											<path d="m9 51.5v20c0 7 1.6 13 15.6 13"></path>
+											<path
+												d="m69 51.5s0-10 9-13 14 8 14 12-10-5-16 9l-7-8h-38l-7 8c-6-14-16-5-16-9s5-15 14-12 9 13 9 13">
+											</path>
+											<path d="m91 51.5v20c0 7-1.6 13-15.6 13"></path>
+											<path d="m77 38.5v-14.2c0-4.9-4-8.8-8.8-8.8h-36.4c-4.9 0-8.8 4-8.8 8.8v14.2"></path>
+											<path d="m39 33.5h22"></path>
+											<path d="m61.5 39.5c-.3-2-.5-4-.5-6s.2-4.1.5-6"></path>
+											<path d="m38 39.5c.3-2 .5-4 .5-6s-.2-4.1-.5-6"></path>
+										</g>
+									</svg> </div>
+							</div>
+						</a>
+					</li>
+					<li id="bx_651765591_973">
+						<a href="http://rov.aero/scheme/" class="card-content" target="_blank">
+							<div class="card-content-top">
+								<div class="card-content__title">Схема аэропорта</div>
+							</div>
+							<div class="card-content-body">
+								<div class="card-content__pic">
+									<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+										stroke="#0098db">
+										<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+											<rect height="30" rx="4" width="80" x="10" y="19"></rect>
+											<rect height="30" rx="4" width="80" x="10" y="55"></rect>
+											<path d="m77.9 40.01-11.27-11.26"></path>
+											<path d="m65.88 37.99v-10h10"></path>
+											<path d="m22.1 34h29.56"></path>
+											<path d="m65.88 76.01 11.26-11.26"></path>
+											<path d="m77.9 73.99v-10h-10"></path>
+											<path d="m22.1 70h29.56"></path>
+											<path d="m22.1 18.62v-8"></path>
+											<path d="m77.9 18.62v-8"></path>
+										</g>
+									</svg> </div>
+							</div>
+						</a>
+					</li>
+					<li id="bx_651765591_3761">
+						<a href="http://rov.aero/services/museums/" class="card-content" target="_blank">
+							<div class="card-content-top">
+								<div class="card-content__title">Мультимедийная экспозиция</div>
+							</div>
+							<div class="card-content-body">
+								<div class="card-content__pic">
+									<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+										<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.00279">
+											<path
+												d="m86.30791 36.74324c0-10.33529-15.6142-18.71369-34.87552-18.71369-19.26112 0-34.89424 8.35867-34.89424 18.694 0 .96547 4.999 24.47631 5.99176 34.91666.7843 8.24779 13.17614 14.92219 28.90248 14.92219 15.72011 0 28.11324-6.6692 28.90227-14.91248.95799-10.00846 5.97325-34.19148 5.97325-34.90668z">
+											</path>
+											<path
+												d="m85.95286 38.985a9.70193 9.70193 0 0 1 -.814 2.196c-4.00052 7.306-17.55816 12.59358-33.57324 12.59358-17.94412 0-32.49637-6.86543-34.67241-15.32781">
+											</path>
+											<path d="m26.7087 47.89982s27.22252-16.64382 48.68277-24.70482"></path>
+											<path d="m76.14671 48.2079s-9.65912-5.76145-49.16293-24.78007"></path>
+											<ellipse cx="51.42304" cy="69.4653" rx="5.45931" ry="8.01576"></ellipse>
+										</g>
+									</svg> </div>
+							</div>
+						</a>
+					</li>
+
+
+				</ul>
+			</div>
+		</section>
+
+
+		<section class="bg-blue d-none d-sm-block pb-sm-2">
+			<div class="container js-fade-up in-viewport">
+				<div
+					class="swiper-container share-slider-container js-share-slider swiper-container-fade swiper-container-horizontal swiper-container-autoheight">
+					<div class="swiper-wrapper" style="transition-duration: 0ms; height: 372px;">
+						<div id="bx_1373509569_4034" class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+							data-swiper-slide-index="2"
+							style="width: 1080px; transition-duration: 0ms; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+							<a href="http://rov.aero/services/booking-tickets/" class="card-share" target="_blank">
+								<div class="card-share-left">
+									<h4 class="card-share__title">Покупайте авиабилеты по выгодным ценам на сайте аэропорта</h4>
+									<p class="card-share__descr">
+										Сервис предоставляется компанией Biletix </p>
+								</div>
+								<div class="card-share-right">
+									<img src="./Rov_files/13_Slider_Bron.png"
+										alt="Покупайте авиабилеты по выгодным ценам на сайте аэропорта" class="card-share__img">
+								</div>
+							</a>
+						</div>
+
+						<div id="bx_1373509569_3272" class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0"
+							style="width: 1080px; transition-duration: 0ms; opacity: 1; transform: translate3d(-1080px, 0px, 0px);">
+							<a href="http://rov.aero/services/offers/parking-in-airport-during-vacation/" class="card-share"
+								target="_blank">
+								<div class="card-share-left">
+									<h4 class="card-share__title">Парковка в&nbsp;аэропорту на&nbsp;время отпуска — всего 200&nbsp;<var
+											class="ruble"></var> <span class="ruble-default">руб.</span>/сутки*</h4>
+									<p class="card-share__descr">
+										Долгосрочная парковка&nbsp;на&nbsp;выгодных условиях. </p>
+								</div>
+								<div class="card-share-right">
+									<img src="./Rov_files/slider_418_parkovka.png"
+										alt="Парковка в аэропорту на время отпуска — всего 200 &lt;var class=&#39;ruble&#39;&gt;&lt;/var&gt; &lt;span class=&#39;ruble-default&#39;&gt;руб.&lt;/span&gt;/сутки*"
+										class="card-share__img">
+								</div>
+							</a>
+						</div>
+						<div id="bx_1373509569_4032" class="swiper-slide swiper-slide-active" data-swiper-slide-index="1"
+							style="width: 1080px; transition-duration: 0ms; opacity: 1; transform: translate3d(-2160px, 0px, 0px);">
+							<a href="http://rov.aero/services/offers/konteyner-dlya-sbora-chekov-taks-fri/" class="card-share"
+								target="_blank">
+								<div class="card-share-left">
+									<h4 class="card-share__title">Контейнер для сбора чеков Такс Фри</h4>
+									<p class="card-share__descr">
+										Выплата компенсации НДС
+										за покупки, совершенные иностранными гражданами в России </p>
+								</div>
+								<div class="card-share-right">
+									<img src="./Rov_files/Slider_HiSky-Taksfree.png" alt="Контейнер для сбора чеков Такс Фри"
+										class="card-share__img">
+								</div>
+							</a>
+						</div>
+						<div id="bx_1373509569_4034" class="swiper-slide swiper-slide-next" data-swiper-slide-index="2"
+							style="width: 1080px; transition-duration: 0ms; opacity: 0; transform: translate3d(-3240px, 0px, 0px);">
+							<a href="http://rov.aero/services/booking-tickets/" class="card-share" target="_blank">
+								<div class="card-share-left">
+									<h4 class="card-share__title">Покупайте авиабилеты по выгодным ценам на сайте аэропорта</h4>
+									<p class="card-share__descr">
+										Сервис предоставляется компанией Biletix </p>
+								</div>
+								<div class="card-share-right">
+									<img src="./Rov_files/13_Slider_Bron.png"
+										alt="Покупайте авиабилеты по выгодным ценам на сайте аэропорта" class="card-share__img">
+								</div>
+							</a>
+						</div>
+						<div id="bx_1373509569_3272" class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+							data-swiper-slide-index="0"
+							style="width: 1080px; transition-duration: 0ms; opacity: 0; transform: translate3d(-4320px, 0px, 0px);">
+							<a href="http://rov.aero/services/offers/parking-in-airport-during-vacation/" class="card-share"
+								target="_blank">
+								<div class="card-share-left">
+									<h4 class="card-share__title">Парковка в&nbsp;аэропорту на&nbsp;время отпуска — всего 200&nbsp;<var
+											class="ruble"></var> <span class="ruble-default">руб.</span>/сутки*</h4>
+									<p class="card-share__descr">
+										Долгосрочная парковка&nbsp;на&nbsp;выгодных условиях. </p>
+								</div>
+								<div class="card-share-right">
+									<img src="./Rov_files/slider_418_parkovka.png"
+										alt="Парковка в аэропорту на время отпуска — всего 200 &lt;var class=&#39;ruble&#39;&gt;&lt;/var&gt; &lt;span class=&#39;ruble-default&#39;&gt;руб.&lt;/span&gt;/сутки*"
+										class="card-share__img">
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-button-next swiper-button-white"></div>
+					<div class="swiper-button-prev swiper-button-white"></div>
+					<div class="share-pagination">
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="0" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="1" style="width: 14%;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="2" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="0" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="1" style="width: 14%;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="2" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="3" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="4" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="0" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="1" style="width: 14%;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="2" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="3" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="4" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="0" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="1" style="width: 14%;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="2" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="3" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="4" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="0" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="1" style="width: 14%;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="2" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="3" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="4" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="0" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="1" style="width: 14%;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="2" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="3" style="width: 0px;"></div>
+						</div>
+						<div class="share-pagination__line">
+							<div class="anim-line" data-index="4" style="width: 0px;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer" style="padding-right: 0px;">
+			<div class="container pl-lg-0 pr-lg-5">
+				<div class="footer-row">
+
+					<div class="footer-col">
+						<a href="tel:88001000333" class="ft-link ft-link--phone">8 800 100-03-33</a>
+						<p class="mb-lg-1">
+							Звонок по РФ бесплатный
+						</p>
+						<div class="mt-3 mt-sm-2 mt-md-3">
+							7 863&nbsp;333-49-99<br>
+							<div>
+								<a href="http://rov.aero/feedback/" class="ft-link ft-link--iconed ft-link--mail" target="_blank">
+									<!-- no: mail --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 10" width="14" height="10"
+										fill="#0098db">
+										<g stroke="none">
+											<path d="M13.91 1.43A2 2 0 0 0 12 0H2A2 2 0 0 0 .09 1.43L7 4.88z"></path>
+											<path d="M7 7.12l-7-3.5V8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.62z"></path>
+										</g>
+									</svg> <span>Обратная связь</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer-col">
+
+
+						<ul class="list-unstyled list-social">
+
+
+							<li><a href="https://www.facebook.com/rov.aero/" class="social-link social-link--fb" target="_blank"></a>
+							</li>
+
+
+
+							<li><a href="http://rov.aero/#viber-qr-popup" data-popup-notice="" class="social-link social-link--vb"
+									target="_blank"></a></li>
+
+
+						</ul>
+
+
+						<div id="viber-qr-popup" class="mfp-hide">
+							<div class="popup-shell form bg-blue" style="">
+								<p class="h3-like mb-2">Platov_bot в Viber</p>
+
+								<div class="form__block mt-0 mb-3">
+									<img src="./Rov_files/qr-viber.svg" alt="Platov_bot в Viber" style="width: 100%;">
+								</div>
+
+								<div class="popup-btn no-max-height" data-mfp-close="" style="max-width:unset;">
+									Закрыть </div>
+							</div>
+						</div>
+						<div class="list-social-fol-content text-right-only-sm mt-4 mt-md-5">
+							<p>
+								<a href="http://rov.aero/antikorrupzionnayapolitika/" class="ft-link" target="_blank">Антикоррупционная
+									«горячая линия» </a>
+							</p>
+						</div>
+					</div>
+					<div class="footer-col footer-col--md-order-1">
+						<p class="mb-lg-2">
+							АО «Ростоваэроинвест»<br> <span class="d-md-block">© 2019</span>
+						</p>
+						<div class="d-none d-md-block mt-md-3">
+
+
+							<a href="http://www.ar-management.ru/" class="ft-link-img img-ar" target="_blank">
+								<svg width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.58 49.88" height="50">
+									<path d="M0 0v37.45h5.07V5.07h32.44v32.44H5.07L0 42.58h42.58V0H0z"></path>
+									<path
+										d="M15.27 34.77l-.43-1.26h-3.46L11 34.77H8.39l3.3-8.77h2.83l3.3 8.75zm-2.17-6.52l-1.1 3.3h2.23zm10.25 6.52l-1.47-2.94h-1.15v2.94h-2.26V26h4.38a2.82 2.82 0 0 1 3 2.91 2.65 2.65 0 0 1-1.74 2.62l1.78 3.21zm.25-5.85a1 1 0 0 0-1.09-.92h-1.78v1.88h1.78a1 1 0 0 0 1.09-.96zM2.62 49.1l-.17-.48h-1.2l-.18.48H.39l1.09-2.81h.75L3.3 49.1zm-.77-2.21l-.44 1.21h.88zm1.51 1.89l.33-.29a.54.54 0 0 0 .44.24.53.53 0 0 0 .53-.44h-.81v-.41h.82a.52.52 0 0 0-.53-.43.53.53 0 0 0-.44.24l-.33-.3a.94.94 0 0 1 .8-.37 1.07 1.07 0 1 1 0 2.13.93.93 0 0 1-.81-.37zm2.81.06v1h-.53v-2.77h.53v.26A.78.78 0 0 1 6.8 47c.52 0 .9.39.9 1.07s-.38 1.07-.9 1.07a.77.77 0 0 1-.63-.3zm1-.76a.53.53 0 0 0-.51-.59.59.59 0 0 0-.46.23v.72a.61.61 0 0 0 .46.23.53.53 0 0 0 .48-.59zm.83 0A1 1 0 0 1 9 47a1.07 1.07 0 1 1 0 2.13 1 1 0 0 1-1-1.05zm1.59 0a.52.52 0 1 0-.52.59.54.54 0 0 0 .48-.59zm2.28 1.02v-1.56H11v1.56h-.53v-2h1.93v2zm.93-1.02a1.08 1.08 0 1 1 1.07 1.07 1 1 0 0 1-1.07-1.07zm1.59 0a.52.52 0 1 0-.52.59.54.54 0 0 0 .52-.59zm1.48.76v1h-.53v-2.77h.53v.26a.78.78 0 0 1 .63-.33c.52 0 .9.39.9 1.07s-.38 1.07-.9 1.07a.77.77 0 0 1-.63-.3zm1-.76a.53.53 0 0 0-.51-.59.59.59 0 0 0-.46.23v.72a.61.61 0 0 0 .46.23.53.53 0 0 0 .48-.59zm1.29 1.02v-1.56h-.57v-.47h1.68v.47h-.57v1.56zm1.97-2.03v.7h.69a.65.65 0 0 1 .71.66.65.65 0 0 1-.71.67H19.6v-2zm0 1.14v.44h.61a.22.22 0 1 0 0-.44zm1.67.89v-2h.54v2zm2.14 0v-2.81h1.31a.91.91 0 1 1 0 1.81h-.71v1zm1.65-1.9a.38.38 0 0 0-.41-.38h-.64v.76h.64a.38.38 0 0 0 .4-.38zm.75.88A1 1 0 0 1 27.4 47a1 1 0 0 1 1 1.12v.12h-1.5a.55.55 0 0 0 .58.47.87.87 0 0 0 .54-.2l.24.34a1.27 1.27 0 0 1-.84.28 1 1 0 0 1-1.08-1.05zm1.05-.64a.49.49 0 0 0-.5.45h1a.47.47 0 0 0-.49-.45zm2.98.1h-1v1.56h-.53v-2h1.57zm.33 1.56v-2h.53v1.2l.84-1.23h.54v2h-.53v-1.24l-.86 1.28zm2.3-1.02a1.08 1.08 0 1 1 1.07 1.07A1 1 0 0 1 33 48.08zm1.59 0a.52.52 0 1 0-.52.59.54.54 0 0 0 .53-.59zm.95 1.02v-2h.53v.75h.84v-.75h.53v2h-.53v-.81h-.84v.81zm2.31-1.02a1.08 1.08 0 1 1 1.07 1.07 1 1 0 0 1-1.07-1.07zm1.59 0a.52.52 0 1 0-.52.59.54.54 0 0 0 .52-.59zm.95 1.02v-2h1.29c.41 0 .62.25.62.52a.47.47 0 0 1-.35.46.5.5 0 0 1 .39.5.56.56 0 0 1-.63.55zm1.37-1.42a.17.17 0 0 0-.19-.17h-.64v.34h.64a.17.17 0 0 0 .18-.17zm0 .79a.19.19 0 0 0-.21-.19h-.66v.38h.66a.19.19 0 0 0 .24-.19z">
+									</path>
+								</svg></a>
+						</div>
+					</div>
+
+					<div class="footel-col">
+						<p>
+							<a href="http://uplab.ru/" class="ft-link" target="_blank">
+								Разработка сайта <span class="d-md-none">Uplab</span>
+								<img src="./Rov_files/logo-uplab.svg" alt="" width="42" height="14" class="d-none d-md-block mt-md-1">
+							</a>
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+
+	</div>
+
+	<div class="bg-dark alerts-section cookies-message" style="display: none;">
+		<div class="i-close i-close--w js-cookies-message__close"></div>
+		<div class="container-fluid">
+			<div class="cookies-message__text">Продолжая использовать наш сайт, вы даете согласие на обработку файлов cookie,
+				пользовательских данных
+				(сведения о местоположении; тип и версия ОС; тип и версия Браузера; тип устройства и разрешение его экрана;
+				источник откуда пришел на сайт пользователь; с какого сайта или по какой рекламе; язык ОС и Браузера; какие
+				страницы открывает и на какие кнопки нажимает пользователь; ip-адрес) в целях функционирования сайта,
+				проведения ретаргетинга и проведения статистических исследований и обзоров. Если вы не хотите, чтобы ваши
+				данные обрабатывались, покиньте сайт.</div>
+		</div>
+	</div>
+
+
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/51449283" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+
+
+	<script
+		type="text/javascript">if (!window.BX) window.BX = {}; if (!window.BX.message) window.BX.message = function (mess) { if (typeof mess == 'object') for (var i in mess) BX.message[i] = mess[i]; return true; };</script>
+	<script
+		type="text/javascript">(window.BX || top.BX).message({ 'JS_CORE_LOADING': 'Загрузка...', 'JS_CORE_NO_DATA': '- Нет данных -', 'JS_CORE_WINDOW_CLOSE': 'Закрыть', 'JS_CORE_WINDOW_EXPAND': 'Развернуть', 'JS_CORE_WINDOW_NARROW': 'Свернуть в окно', 'JS_CORE_WINDOW_SAVE': 'Сохранить', 'JS_CORE_WINDOW_CANCEL': 'Отменить', 'JS_CORE_WINDOW_CONTINUE': 'Продолжить', 'JS_CORE_H': 'ч', 'JS_CORE_M': 'м', 'JS_CORE_S': 'с', 'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние', 'JSADM_AI_ALL_NOTIF': 'Показать все', 'JSADM_AUTH_REQ': 'Требуется авторизация!', 'JS_CORE_WINDOW_AUTH': 'Войти', 'JS_CORE_IMAGE_FULL': 'Полный размер' });</script>
+	<script
+		type="text/javascript">(window.BX || top.BX).message({ 'LANGUAGE_ID': 'ru', 'FORMAT_DATE': 'DD.MM.YYYY', 'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS', 'COOKIE_PREFIX': 'BITRIX_SM', 'SERVER_TZ_OFFSET': '10800', 'SITE_ID': 's1', 'SITE_DIR': '/', 'USER_ID': '', 'SERVER_TIME': '1556096707', 'USER_TZ_OFFSET': '0', 'USER_TZ_AUTO': 'Y', 'bitrix_sessid': '74cc258e7e12407b1657658386b30354' });</script>
+	<script type="text/javascript" src="./Rov_files/kernel_main_v1.js.téléchargement"></script>
+	<script type="text/javascript" src="./Rov_files/kernel_main_polyfill_promise_v1.js.téléchargement"></script>
+	<script type="text/javascript" src="./Rov_files/loadext.min.js.téléchargement"></script>
+	<script type="text/javascript" src="./Rov_files/extension.min.js.téléchargement"></script>
+	<script
+		type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core.js', '/bitrix/js/main/core/core_promise.js', '/bitrix/js/main/core/core_ajax.js', '/bitrix/js/main/json/json2.min.js', '/bitrix/js/main/core/core_ls.js', '/bitrix/js/main/session.js', '/bitrix/js/main/core/core_window.js', '/bitrix/js/main/utils.js', '/bitrix/js/main/core/core_popup.js', '/bitrix/js/main/date/main.date.js', '/bitrix/js/main/core/core_date.js', '/bitrix/js/main/core/core_fx.js', '/bitrix/js/main/polyfill/promise/js/promise.js', '/local/templates/main/assets/js/index.js', '/local/templates/main/assets/js/preloader.js', '/local/templates/main/prog.js', '/local/templates/main/assets-prog/dist/script.js']); </script>
+	<script
+		type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css', '/bitrix/js/main/core/css/core_popup.css', '/bitrix/js/main/core/css/core_date.css', '/local/templates/main/assets/css/indexROV.css', '/local/templates/main/assets-prog/dist/styleROV.css', '/local/templates/main/styles.css', '/local/templates/main/template_styles.css']); </script>
+
+
+	<script type="text/javascript"
+		src="./Rov_files/template_8a67ec2ad485acb41c2951a63bc7fed2_v1.js.téléchargement"></script>
+	<script
+		type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "2da73fae64610bd7c5b08272f7cc12cd"]); _ba.push(["host", "rov.aero"]); (function () { var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true; ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ba, s); })();</script>
+
+
+	<script type="text/javascript"> (function (d, w, c) {
+			(w[c] = w[c] || []).push(function () {
+				try {
+					w.yaCounter51449283 = new Ya.Metrika({
+						id: 51449283,
+						clickmap: true,
+						trackLinks: true,
+						accurateTrackBounce: true,
+						webvisor: true
+					});
+				} catch (e) {
+				}
+			});
+			var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+				n.parentNode.insertBefore(s, n);
+			};
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = "https://mc.yandex.ru/metrika/watch.js";
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else {
+				f();
+			}
+		})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<script async="" src="./Rov_files/js"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+
+		gtag('js', new Date());
+
+		gtag('config', 'UA-130602348-1');
+	</script>
+
+
+	<div id="mindzip-bubble-anchor" style="display: block;">
+		<div id="mindzip-highlight-bubble" title="Save as a quote" style="display: none;">
+			<button>
+				<i class="iconMZlogo"></i>
+			</button>
+			<style>
+				*,
+				p,
+				div {
+					user-select: auto !important;
+					-moz-user-select: auto !important;
+					-webkit-user-select: auto !important;
+				}
+
+				<style/></div>
+			</style>
+		</div>
+	</div>
+	<div id="mindzip-bubble-anchor" style="display: block;">
+		<div id="mindzip-highlight-bubble" title="Save as a quote">
+			<button>
+				<i class="iconMZlogo"></i>
+			</button>
+			<style>
+				*,
+				p,
+				div {
+					user-select: auto !important;
+					-moz-user-select: auto !important;
+					-webkit-user-select: auto !important;
+				}
+
+				<style/></div>
+			</style>
+		</div>
+	</div>
+	<div id="mindzip-bubble-anchor" style="display: block;">
+		<div id="mindzip-highlight-bubble" title="Save as a quote">
+			<button>
+				<i class="iconMZlogo"></i>
+			</button>
+			<style>
+				*,
+				p,
+				div {
+					user-select: auto !important;
+					-moz-user-select: auto !important;
+					-webkit-user-select: auto !important;
+				}
+
+				<style/></div>
+			</style>
+		</div>
+	</div>
+	<div id="mindzip-bubble-anchor" style="display: block;">
+		<div id="mindzip-highlight-bubble" title="Save as a quote">
+			<button>
+				<i class="iconMZlogo"></i>
+			</button>
+			<style>
+				*,
+				p,
+				div {
+					user-select: auto !important;
+					-moz-user-select: auto !important;
+					-webkit-user-select: auto !important;
+				}
+
+				<style/></div>
+			</style>
+		</div>
+	</div>
+	<div id="mindzip-bubble-anchor" style="display: block;">
+		<div id="mindzip-highlight-bubble" title="Save as a quote">
+			<button>
+				<i class="iconMZlogo"></i>
+			</button>
+			<style>
+				*,
+				p,
+				div {
+					user-select: auto !important;
+					-moz-user-select: auto !important;
+					-webkit-user-select: auto !important;
+				}
+
+				<style/></div>
+			</style>
+		</div>
+	</div>
+	<div id="mindzip-bubble-anchor" style="display: block;">
+		<div id="mindzip-highlight-bubble" title="Save as a quote">
+			<button>
+				<i class="iconMZlogo"></i>
+			</button>
+			<style>
+				*,
+				p,
+				div {
+					user-select: auto !important;
+					-moz-user-select: auto !important;
+					-webkit-user-select: auto !important;
+				}
+
+				<style/></div>
+			</style>
+		</div>
+	</div>
+</body>
+
+</html>
