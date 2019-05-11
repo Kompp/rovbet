@@ -1,25 +1,25 @@
 {
-  "name": "rovbet",
-  "version": "1.0.0",
-  "description": "",
-  "main": "launch_v2.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kompp/rovbet.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Kompp/rovbet/issues"
-  },
-  "homepage": "https://github.com/Kompp/rovbet#readme",
-  "dependencies": {
-    "ejs": "^2.6.1",
-    "express": "^4.16.4",
-    "puppeteer": "^1.15.0"
-  }
+    "name": "rovbet",
+    "version": "1.0.0",
+    "description": "",
+    "main": "launch_v2.js",
+    "scripts": {
+        "start": "launch_v2.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Kompp/rovbet.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Kompp/rovbet/issues"
+    },
+    "homepage": "https://github.com/Kompp/rovbet#readme",
+    "dependencies": {
+        "ejs": "^2.6.1",
+        "express": "^4.16.4",
+        "puppeteer": "^1.15.0"
+    }
 }

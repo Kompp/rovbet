@@ -110,7 +110,6 @@ scrap()
         setInterval(function() {
             console.log("-- MISE A JOUR SITE --");
             scrap().then(value => {
-
                 app.get('/', function(req, res) {
                     res.render('Rov.ejs', { value: value });
                 });
