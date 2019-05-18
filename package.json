@@ -18,6 +18,7 @@
     },
     "homepage": "https://github.com/Kompp/rovbet#readme",
     "dependencies": {
+        "aos": "^2.3.4",
         "ejs": "^2.6.1",
         "express": "^4.16.4",
         "puppeteer": "^1.15.0"
