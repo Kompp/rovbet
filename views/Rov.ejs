@@ -77,8 +77,7 @@
     </style>
 
     <link rel="icon" type="image/png" href="./Rov_files/favicon.png">
-    <link href="./Rov_files/style.css" type="text/css" rel="stylesheet">
-    <link href="./Rov_files/style2.css" type="text/css" data-template-style="true" rel="stylesheet">
+    <link href="./Rov_files/style.css" type="text/css" data-template-style="true" rel="stylesheet">
     <style>
         @font-face {
             font-family: "mindzip";
@@ -273,6 +272,7 @@
                 var vainqueurs = JSON.parse('<%- JSON.stringify(value.vainqueurs) %>')
                 var ligues = JSON.parse('<%- JSON.stringify(value.ligues) %>')
                 var prédictions = JSON.parse('<%- JSON.stringify(value.prédictions) %>')
+                var états = JSON.parse('<%- JSON.stringify(value.états) %>')
                 var moyenne = 0
                 var nbMatchs = 0
                 var dates = JSON.parse('<%- JSON.stringify(value.dates) %>')
@@ -287,17 +287,23 @@
 
                 for (var result in matchs) {
                     //Comparaison des dates
-                    var matchday = new Date(dates[result]);
+                    var matchday = new Date(dates[result])
 
                     if (ligues[result] != "MLS" && ligues[result] != "Veikkausliiga" && ligues[result] != "Superettan" && ligues[result] != "League One") {
                         if (matchday.getDate() == date.getDate()) {
                             //Matchs pour Today
-                            contenu += "<li data-aos=\"fade-up\" id=\"" + result + "\"><a class=\"card-content\" target=\"_blank\"><div class=\"card-content-top\"><div class=\"card-content__title\">" + matchs[result] + "</div><p class=\"subtitle\">" + ligues[result] + "</p></div><div><img src=\"./Rov_files/" + ligues[result] + ".png\" class=\"badge-ligue\"></div><div class=\"card-content-body\"><p class=\"cote\">" + prédictions[result] + "</p><p>🏆 " + vainqueurs[result] + "</p><p>" + dates[result] + "</p><br><img src=\"./Rov_files/attente.png\" height=\"25\"></div></a></li>"
+                            if (états[result] != null)
+                                var élémentTimer = "<p>" + états[result] + "</p>"
+                            else
+                                var élémentTimer = "<img src=\"./Rov_files/attente.png\" height=\"25\">"
+                            contenu += "<li data-aos=\"fade-up\" id=\"" + result + "\"><a class=\"card-content\" target=\"_blank\"><div class=\"card-content-top\"><div class=\"card-content__title\">" + matchs[result] + "</div><p class=\"subtitle\">" + ligues[result] + "</p></div><div><img src=\"./Rov_files/" + ligues[result] + ".png\" class=\"badge-ligue\"></div><div class=\"card-content-body\"><p class=\"cote\">" + prédictions[result] + "</p><p>🏆 " + vainqueurs[result] + "</p><p>" + dates[result] + "</p><br>" + élémentTimer + "</div></a></li>"
                             nbMatchs++
                             moyenne += parseInt(prédictions[result].substring(0, 2))
                         } else if ((matchday.getDate() == date.getDate() + 1 || matchday.getDate() == 1) && !passageJourSuivant) {
                             passageJourSuivant = true
                             contenu += "</ul><br><h1>Tomorrow</h1><ul class=\"list-unstyled card-content-list js-fade-up in-viewport\">";
+                            contenu += "<li data-aos=\"fade-up\" id=\"" + result + "\"><a class=\"card-content\" target=\"_blank\"><div class=\"card-content-top\"><div class=\"card-content__title\">" + matchs[result] + "</div><p class=\"subtitle\">" + ligues[result] + "</p></div><div><img src=\"./Rov_files/" + ligues[result] + ".png\" class=\"badge-ligue\"></div><div class=\"card-content-body\"><p class=\"cote\">" + prédictions[result] + "</p><p>🏆 " + vainqueurs[result] + "</p><p>" + dates[result] + "</p><br><img src=\"./Rov_files/attente.png\" height=\"25\"></div></a></li>"
+                        } else if (matchday.getDate() == date.getDate() + 1 || matchday.getDate() == 1) {
                             contenu += "<li data-aos=\"fade-up\" id=\"" + result + "\"><a class=\"card-content\" target=\"_blank\"><div class=\"card-content-top\"><div class=\"card-content__title\">" + matchs[result] + "</div><p class=\"subtitle\">" + ligues[result] + "</p></div><div><img src=\"./Rov_files/" + ligues[result] + ".png\" class=\"badge-ligue\"></div><div class=\"card-content-body\"><p class=\"cote\">" + prédictions[result] + "</p><p>🏆 " + vainqueurs[result] + "</p><p>" + dates[result] + "</p><br><img src=\"./Rov_files/attente.png\" height=\"25\"></div></a></li>"
                         }
                     }
@@ -318,10 +324,19 @@
                 AOS.refresh();
             </script>
         </section>
+        <section class="bg-blue pb-8">
+            <!----STATISTIQUES-->
+
+            <br><br>
+            <p class="credits">Developed by Alexandre Fournier as a fun sideproject (2019). <a href="https://github.com/Kompp/rovbet">View source code</a></p>
+
+        </section>
+
     </div>
     <script type="text/javascript" src="./Rov_files/template_8a67ec2ad485acb41c2951a63bc7fed2_v1.js.téléchargement"></script>
 
     <script async="" src="./Rov_files/js"></script>
+
 </body>
 
 </html>
