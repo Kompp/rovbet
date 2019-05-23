@@ -225,7 +225,6 @@
 
                         </div>
                         <div class="header-col ml-auto fx-ai-center--xs">
-
                             <span id="confidence" class="d-none d-sm-inline-block hdr-link">Today's confidence : 0%</span>
                         </div>
                     </div>
@@ -237,7 +236,7 @@
                 <div class="intro-page js-intro-page up-get">
                     <div class="intro-page__svx intro-page__svx--source">
                         <div class="js-per-rotate svx-per-rotate" style="transform: perspective(1000px) rotateX(0deg);">
-                            <!-- no: airport-logos/ROV-code --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 376" width="1260" height="376">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 376" width="1260" height="376">
 								<path
 									d="M379.5 220.9v-1c36.2-18.3 54.5-60.7 54.5-99.5 0-53.1-26-90.2-67.2-106.1C351 8.2 333.2 5.6 296 5.6H169.2v364.7h89.1V247.4h41.8l64.7 122.9h99.3l-70.8-127.5c-8.7-15.2-13.8-21.9-13.8-21.9zm-82.5-50h-38.7V82.1h30c14.8 0 25.5 1.5 33.6 5.1 16.8 6.6 21.4 20.4 21.4 38.8.1 29.1-17.8 44.9-46.3 44.9z">
 								</path>
@@ -278,12 +277,12 @@
                 var dates = JSON.parse('<%- JSON.stringify(value.dates) %>')
 
                 //Date d'aujourd'hui
-                var q = new Date();
-                var m = q.getMonth();
-                var d = q.getDate();
-                var y = q.getFullYear();
-                var date = new Date(y, m, d);
-                var passageJourSuivant = false;
+                var q = new Date()
+                var m = q.getMonth()
+                var d = q.getDate()
+                var y = q.getFullYear()
+                var date = new Date(y, m, d)
+                var passageJourSuivant = false
 
                 for (var result in matchs) {
                     //Comparaison des dates
@@ -300,6 +299,10 @@
                             nbMatchs++
                             moyenne += parseInt(prédictions[result].substring(0, 2))
                         } else if ((matchday.getDate() == date.getDate() + 1 || matchday.getDate() == 1) && !passageJourSuivant) {
+                            if (nbMatchs == 0) {
+                                document.getElementById("confidence").style.display = "none"
+                                contenu += "<p>No interesting matches today !</p>"
+                            }
                             passageJourSuivant = true
                             contenu += "</ul><br><h1>Tomorrow</h1><ul class=\"list-unstyled card-content-list js-fade-up in-viewport\">";
                             contenu += "<li data-aos=\"fade-up\" id=\"" + result + "\"><a class=\"card-content\" target=\"_blank\"><div class=\"card-content-top\"><div class=\"card-content__title\">" + matchs[result] + "</div><p class=\"subtitle\">" + ligues[result] + "</p></div><div><img src=\"./Rov_files/" + ligues[result] + ".png\" class=\"badge-ligue\"></div><div class=\"card-content-body\"><p class=\"cote\">" + prédictions[result] + "</p><p>🏆 " + vainqueurs[result] + "</p><p>" + dates[result] + "</p><br><img src=\"./Rov_files/attente.png\" height=\"25\"></div></a></li>"
@@ -323,12 +326,27 @@
                 AOS.init();
                 AOS.refresh();
             </script>
-        </section>
-        <section class="bg-blue pb-8">
             <!----STATISTIQUES-->
-
-            <br><br>
-            <p class="credits">Developed by Alexandre Fournier as a fun sideproject (2019). <a href="https://github.com/Kompp/rovbet">View source code</a></p>
+            <br>
+            <div class="container" id="stats">
+                <h1>Stats</h1>
+                <br>
+                <p id="earnings">I won 0€ so far this week.</p>
+                <script>
+                    var gains = JSON.parse('<%- JSON.stringify(value.gains) %>')
+                    var nbMatchsSemaine, nbVictoires = 0
+                    gains.forEach(function(el) {
+                        if (el != 0) {
+                            nbMatchsSemaine++
+                            if (el == 1)
+                                nbVictoires++
+                        }
+                    })
+                    document.getElementById("earnings").innerText = "I'm making around " + (1.5 * nbVictoires - (nbMatchsSemaine - nbVictoires)) * 10 + "€ today so far; I correctly predicted " + nbVictoires + " scores today, that is " + (nbVictoires / nbMatchsSemaine) + "%  of today's matches."
+                </script>
+                <br><br>
+                <p class="credits">Developed by Alexandre Fournier (2019). <a href="https://github.com/Kompp/rovbet">View source code</a></p>
+            </div>
 
         </section>
 

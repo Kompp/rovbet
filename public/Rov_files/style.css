@@ -11,7 +11,7 @@
 
 .credits {
     text-align: center;
-    font-size: 10px
+    font-size: 14px
 }
 
 *,
@@ -154,7 +154,7 @@ svg:not(:root) {
         display: inline!important
     }
     .d-sm-inline-block {
-        display: inline-block!important
+        display: inline-block
     }
     .d-sm-block {
         display: block!important

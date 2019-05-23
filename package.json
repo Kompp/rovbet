@@ -2,9 +2,9 @@
     "name": "rovbet",
     "version": "1.0.0",
     "description": "",
-    "main": "launch_v2.js",
+    "main": "launch.js",
     "scripts": {
-        "start": "node launch_v2.js"
+        "start": "node launch.js"
     },
     "repository": {
         "type": "git",
