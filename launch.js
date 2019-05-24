@@ -138,7 +138,6 @@ const scrap = async() => {
             if (vérifierÉtat) {
                 url = 'http://www.google.com/search?q=' + retour.matchs[j]
                 const état = await récupérerStatut(browser, url, retour.idVainqueur[j])
-                console.log(retour.matchs[j] + "/" + état.score)
                 vérifierÉtat = état != null
                 états.push(état.score)
                 gains.push(état.gain)

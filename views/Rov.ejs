@@ -211,15 +211,12 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
         <header class="header bg-blue">
             <div class="header-inner" style="padding-right: 0px;">
                 <div class="container">
                     <div class="header-row">
-
-
                         <div class="header-col header-col--first header-col--closed">
                             <a class="hdr-link hdr-link-tab  is-active " id='titre' target="_blank">RovBet - AI powered soccer ⚽</a>
 
@@ -266,7 +263,7 @@
             </script>
             <script>
                 //REMPLISSAGE DES TABLES
-                var contenu = "<h1>Today</h1><ul class=\"list-unstyled card-content-list js-fade-up in-viewport\">"
+                var contenu = "<h1 data-aos=\"fade-up\">Today</h1><ul class=\"list-unstyled card-content-list js-fade-up in-viewport\">"
                 var matchs = JSON.parse('<%- JSON.stringify(value.matchs) %>')
                 var vainqueurs = JSON.parse('<%- JSON.stringify(value.vainqueurs) %>')
                 var ligues = JSON.parse('<%- JSON.stringify(value.ligues) %>')
@@ -304,7 +301,7 @@
                                 contenu += "<p>No interesting matches today !</p>"
                             }
                             passageJourSuivant = true
-                            contenu += "</ul><br><h1>Tomorrow</h1><ul class=\"list-unstyled card-content-list js-fade-up in-viewport\">";
+                            contenu += "</ul><br><h1 data-aos=\"fade-up\">Tomorrow</h1><ul class=\"list-unstyled card-content-list js-fade-up in-viewport\">";
                             contenu += "<li data-aos=\"fade-up\" id=\"" + result + "\"><a class=\"card-content\" target=\"_blank\"><div class=\"card-content-top\"><div class=\"card-content__title\">" + matchs[result] + "</div><p class=\"subtitle\">" + ligues[result] + "</p></div><div><img src=\"./Rov_files/" + ligues[result] + ".png\" class=\"badge-ligue\"></div><div class=\"card-content-body\"><p class=\"cote\">" + prédictions[result] + "</p><p>🏆 " + vainqueurs[result] + "</p><p>" + dates[result] + "</p><br><img src=\"./Rov_files/attente.png\" height=\"25\"></div></a></li>"
                         } else if (matchday.getDate() == date.getDate() + 1 || matchday.getDate() == 1) {
                             contenu += "<li data-aos=\"fade-up\" id=\"" + result + "\"><a class=\"card-content\" target=\"_blank\"><div class=\"card-content-top\"><div class=\"card-content__title\">" + matchs[result] + "</div><p class=\"subtitle\">" + ligues[result] + "</p></div><div><img src=\"./Rov_files/" + ligues[result] + ".png\" class=\"badge-ligue\"></div><div class=\"card-content-body\"><p class=\"cote\">" + prédictions[result] + "</p><p>🏆 " + vainqueurs[result] + "</p><p>" + dates[result] + "</p><br><img src=\"./Rov_files/attente.png\" height=\"25\"></div></a></li>"
@@ -329,9 +326,9 @@
             <!----STATISTIQUES-->
             <br>
             <div class="container" id="stats">
-                <h1>Stats</h1>
+                <h1 data-aos="fade-up">Stats</h1>
                 <br>
-                <p id="earnings">I won 0€ so far this week.</p>
+                <p data-aos="fade-up" id="earnings">I won 0€ so far this week.</p>
                 <script>
                     var gains = JSON.parse('<%- JSON.stringify(value.gains) %>')
                     var nbMatchsSemaine, nbVictoires = 0
@@ -345,7 +342,8 @@
                     document.getElementById("earnings").innerText = "I'm making around " + (1.5 * nbVictoires - (nbMatchsSemaine - nbVictoires)) * 10 + "€ today so far; I correctly predicted " + nbVictoires + " scores today, that is " + (nbVictoires / nbMatchsSemaine) + "%  of today's matches."
                 </script>
                 <br><br>
-                <p class="credits">Developed by Alexandre Fournier (2019). <a href="https://github.com/Kompp/rovbet">View source code</a></p>
+                <p data-aos="fade-up" id="credits">Developed by Alexandre Fournier (2019). <a href="https://github.com/Kompp/rovbet">View source code</a></p>
+                <br><br>
             </div>
 
         </section>
