@@ -1,0 +1,15 @@
+Conception statistiques
+
+UX:
+Stats : cette semaine, j'ai parié sur x matchs et remporté x€ (soit x% de victoires).
+Graphique des résultats par ligue
+Graphique des résultats par jour
+
+Cette année, j'ai eu un taux de victoires de x% et ait remporté x€ (soit une moyenne de gain de x€ par pari).
+Tableau des taux de réussite par ligue, trié par meilleures ligues.
+
+Pour les données à l'année, scraper tout le site betbot 
+et conserver les mauvaises ligues seulement pour les ligues exclues dans le Tableau
+Petit à petit on ajoutera à la DB les matchs ajustés de Rovbet.
+
+A long terme: implémenter les deux méthodes, pour créer un Rovbet ajusté idéalement supérieur aux deux IA distinctes.

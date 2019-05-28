@@ -4,7 +4,8 @@
     "description": "",
     "main": "launch.js",
     "scripts": {
-        "start": "node launch.js"
+        "start": "node launch.js",
+        "now-build": "node launch.js"
     },
     "repository": {
         "type": "git",
@@ -21,6 +22,7 @@
         "aos": "^2.3.4",
         "ejs": "^2.6.1",
         "express": "^4.16.4",
-        "puppeteer": "^1.15.0"
+        "puppeteer": "^1.15.0",
+        "tedious": "^6.1.1"
     }
 }
