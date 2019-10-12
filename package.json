@@ -20,9 +20,11 @@
     "homepage": "https://github.com/Kompp/rovbet#readme",
     "dependencies": {
         "aos": "^2.3.4",
+        "cheerio": "^1.0.0-rc.3",
         "ejs": "^2.6.1",
         "express": "^4.16.4",
         "puppeteer": "^1.15.0",
+        "request-promise": "^4.2.4",
         "tedious": "^6.1.1"
     }
 }

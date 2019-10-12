@@ -14,6 +14,23 @@
     font-size: 14px
 }
 
+::-webkit-scrollbar {
+    width: .3em;
+    height: .3em
+}
+
+::-webkit-scrollbar-button {
+    background: #ccc
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #222
+}
+
+::-webkit-scrollbar-thumb {
+    background: #eee
+}
+
 *,
 :after,
 :before {

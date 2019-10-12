@@ -1,88 +1,67 @@
-/* ROVBET - DEVELOPPE PAR ALEXANDRE FOURNIER */
 const puppeteer = require('puppeteer')
-const request = require('request-promise');
-var cheerio = require('cheerio')
 
 const récupérerUrls = async browser => {
     let urls = []
-    for (var pageIndex = 1; pageIndex <= 6; pageIndex++)
-        urls.push("http://www.betbot.soccer/?page=" + pageIndex + "&filter=true&period=upcoming&method=betbot&likelihood=every&odds=safe")
+    urls.push("https://www.matchendirect.fr/prevu/asc/")
     return urls
 }
 
-const récupérerPrédictions = async(browser, url) => {
+const récupérerDonnées = async(browser, url) => {
+    const page = await browser.newPage()
+        //Activer le logging à l'intérieur de page.evaluate
+    page.on('console', consoleObj => console.log(consoleObj.text()));
+    await page.goto(url)
+    await page.waitFor('body')
 
-    //Chargement de la page des prédictions
-    const res = await request({
-        url,
-        headers: {
-            'User-Agent': 'Mozilla/5.0 (X11; CrOS x86_64 8172.45.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.64 Safari/537.36'
-        }
-    })
-    const $ = cheerio.load(res)
+    let résultat = page.evaluate(() => {
+        let matchs = [],
+            vainqueurs = [],
+            ligues = [] //,
+            //prédictions = [],
+            //dates = [],
+            //idVainqueur = []
+            //idVainqueur = 0 si c'est l'équipe domicile qui devrait gagner, 1 pour l'équipe droite
 
-    let matchs = [],
-        vainqueurs = [],
-        ligues = [],
-        prédictions = [],
-        dates = [],
-        idVainqueur = []
-        //idVainqueur = 0 si c'est l'équipe domicile qui devrait gagner, 1 pour l'équipe droite
+        //Recherche des éléments de la page
+        Array.from(document.querySelectorAll('table tr')).forEach(function(element) {
+            let titre1 = element.getElementsByClassName("lm3_eq1")
+            let titre2 = element.getElementsByClassName("lm3_eq2")
 
-    //Recherche des éléments de la page
-    $('table tr').each(function(element) {
-        let titres = $(this).find("b")
+            //Titre du match
+            matchs.push(titre1.textContent + " - " + titre2.textContent)
+            console.log(titre1.textContent + " - " + titre2.textContent)
 
-        if (titres.length != 0) {
-            //Si c'est une ligue qui nous intéresse, continue le scraping; sinon arrête
-            var ligue = titres.eq(0).parent().parent().find("h5").eq(0).html().substring(26)
-            ligue = ligue.substring(0, ligue.indexOf("<"))
-            if (ligue != "MLS" && ligue != "Premiership" && ligue != "League Two" && ligue != "Veikkausliiga" && ligue != "Superettan" && ligue != "League One") {
-                //Titre du match
-                matchs.push(titres.eq(0).html() + " - " + titres.eq(1).html())
-
-                //Vainqueur
-                if (titres.eq(0).parent().parent().find("h4").eq(0).text().includes("Win")) {
-                    vainqueurs.push(titres.eq(0).innerHTML)
-                    idVainqueur.push(0)
-                } else {
-                    vainqueurs.push(titres.eq(1).innerHTML)
-                    idVainqueur.push(1)
-                }
-
-                //Ligue
-                ligues.push(ligue)
-
-                //Date
-                let dateEl = titres.eq(0).parent().parent().find("h5").eq(0).html().substring(0, 10)
+            //Ligue
+            let ligue = titre1.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement
+            ligues.push(ligue.getElementsByClassName("panel-heading livescore_head")[0].textContent)
+                /*
+                    //Date
+                let dateEl = titres[0].parentElement.parentElement.getElementsByTagName("h5")[0].innerHTML.substring(0, 10)
                 dates.push(dateEl)
 
                 //Remonter à l'élément tr
-                let probas = titres.eq(0).parent().parent().find("h4").eq(0).parent()
-
-                //Pourcentage de prédiction
-                let probaSpan = probas.attr("data-original-title")
+                let probas = titres[0].parentElement.parentElement.getElementsByTagName("h4")[0].parentElement
+                    //Pourcentage de prédiction
+                let probaSpan = probas.getAttribute("data-original-title")
                 let pourcentage = probaSpan.substring(probaSpan.indexOf(".") + 1)
 
                 if (pourcentage.length == 2)
                     prédictions.push(pourcentage.substring(0, 1) + "0%")
                 else
-                    prédictions.push(pourcentage)
-            }
+                    prédictions.push(pourcentage)*/
+        })
+
+        return {
+            matchs,
+            vainqueurs,
+            ligues,
+            /*prédictions,
+            dates,
+            idVainqueur*/
         }
     })
 
-    return {
-        matchs,
-        vainqueurs,
-        ligues,
-        prédictions,
-        dates,
-        idVainqueur
-    }
-    /*})*/
-
-    //return résultat
+    return résultat
 }
 
 const récupérerStatut = async(browser, url, prédictionOriginelle) => {
@@ -118,7 +97,7 @@ const récupérerStatut = async(browser, url, prédictionOriginelle) => {
 
 const scrap = async() => {
     let browser = await puppeteer.launch({
-        headless: true
+        headless: false
     })
     const urlList = await récupérerUrls(browser)
 
@@ -143,10 +122,11 @@ const scrap = async() => {
     var matchday
 
     while (!finirScraping && i < urlList.length) {
-        console.log("Progression : page n°" + (i + 1) + " ...")
-        const retour = await récupérerPrédictions(browser, urlList[i])
-        console.log("Progression : scraping google de ces données...")
-        for (var j = 0; j < retour.matchs.length; j++) {
+        console.log("Recherche matchendirect..." + (i + 1) + " ...")
+        const retour = await récupérerDonnées(browser, urlList[i])
+        console.log("Progression : Scraping google de ces données...")
+
+        /*for (var j = 0; j < retour.matchs.length; j++) {
             matchs.push(retour.matchs[j])
             vainqueurs.push(retour.vainqueurs[j])
             ligues.push(retour.ligues[j])
@@ -155,22 +135,27 @@ const scrap = async() => {
 
             //Scraping de l'état du match
             if (vérifierÉtat) {
-                url = 'http://www.google.com/search?q=' + retour.matchs[j]
-                const état = await récupérerStatut(browser, url, retour.idVainqueur[j])
-                vérifierÉtat = état != null
-                états.push(état.score)
-                gains.push(état.gain)
+                if (retour.ligues[j] != "MLS" && retour.ligues[j] != "Veikkausliiga" && retour.ligues[j] != "Superettan" && retour.ligues[j] != "League One") {
+                    url = 'http://www.google.com/search?q=' + retour.matchs[j]
+                    const état = await récupérerStatut(browser, url, retour.idVainqueur[j])
+                    vérifierÉtat = état != null
+                    états.push(état.score)
+                    gains.push(état.gain)
+                } else {
+                    états.push(null)
+                    gains.push(null)
+                }
             }
 
             //Cas d'arret : plus de 2 jours après ou c'est le 1er et nous le 29
             matchday = (new Date(retour.dates[j])).getDate()
             finirScraping = matchday >= ajd.getDate() + 2 || (matchday == 1 && ajd.getDate() <= 29)
-        }
+        }*/
 
         i++
         await browser.close()
         browser = await puppeteer.launch({
-            headless: true
+            headless: false
         })
     }
     console.log("Recherche terminée ! (" + matchday + "/" + ajd.getDate() + ")")
@@ -189,6 +174,7 @@ const scrap = async() => {
 scrap()
     .then(value => {
         console.log("--- RESULTATS ---")
+        console.log(value)
         console.log("Lancement du serveur ROVBET...")
         var express = require('express');
 
