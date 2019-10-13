@@ -3,7 +3,7 @@ const puppeteer = require('puppeteer')
 const request = require('request-promise');
 var cheerio = require('cheerio')
 
-const récupérerUrls = async browser => {
+const récupérerUrls = async() => {
     let urls = []
     for (var pageIndex = 1; pageIndex <= 6; pageIndex++)
         urls.push("http://www.betbot.soccer/?page=" + pageIndex + "&filter=true&period=upcoming&method=betbot&likelihood=every&odds=safe")
@@ -80,9 +80,6 @@ const récupérerPrédictions = async(browser, url) => {
         dates,
         idVainqueur
     }
-    /*})*/
-
-    //return résultat
 }
 
 const récupérerStatut = async(browser, url, prédictionOriginelle) => {
